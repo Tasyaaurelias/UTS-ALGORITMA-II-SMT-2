@@ -1,0 +1,98 @@
+//NAMA : TASYA AURELIA
+// NPM : 227064516144
+// UTS ALGORITMA II
+
+package javaapplication1;
+import java.util.Scanner;
+public class coldplay {
+   
+    public static void main(String[] args) {
+    
+     Scanner scanner = new Scanner(System.in);
+
+        // untuk menampilkan judul program
+        System.out.println("// COLDPLAY MUSIC of the SPHERES //");
+        System.out.println("========== WORLD TOUR ==========");
+        System.out.println("GELORA BUNG KARNO STADIUM JAKARTA");
+        System.out.println("WEDNESDAY NOVEMBER 15, 2023");
+        
+        // untuk menampilkan kategori tiket yang tersedia
+        System.out.println("Kategori tiket yang tersedia:");
+        System.out.println("1. ULTIMATE EXPERIENCE (CAT1) IDR 11.000.000");
+        System.out.println("2. MY UNIVERSE (FESTIVAL) IDR 5.700.000");
+        System.out.println("3. CAT 1 (NUMBERED SEATING)IDR 5.000.000");
+        System.out.println("4. CAT 2 (NUMBERED SEATING)IDR 4.000.000");
+        System.out.println("5. CAT 3 (NUMBERED SEATING)IDR 3.250.000");
+        System.out.println("6. CAT 4 (NUMBERED SEATING)IDR 2.500.000");
+        System.out.println("7. CAT 5 (NUMBERED SEATING)IDR 1.750.000");
+        System.out.println("8. CAT 6 (NUMBERED SEATING)IDR 1.250.000");
+        System.out.println("9. CAT 7 (NUMBERED SEATING)IDR  800 .000");
+        
+        // untuk mengambil input dari pengguna
+        System.out.print("Pilih kategori tiket (1-6): ");
+        int Cat = scanner.nextInt();
+        System.out.print("Masukkan jumlah tiket yang ingin dibeli: ");
+        int quantity = scanner.nextInt();
+        
+        // untuk menghitung total harga
+        int price = 0;
+        switch (Cat) {
+            case 1:
+                price = 11000000;
+                break;
+            case 2:
+                price = 5700000;
+                break;
+            case 3:
+                price = 5000000;
+                break;
+            case 4:
+                price = 4000000;
+                break;
+            case 5: 
+                price = 3200000;
+                break;
+            case 6:
+                price = 2500000;
+                break;      
+            case 7:
+                price = 1750000;
+                break;      
+            case 8:
+                price = 1250000;
+                break;      
+            case 9:
+                price = 800000;
+                break;      
+            default:
+                System.out.println("Kategori tiket tidak valid.");
+                return;
+        }
+        int total = price * quantity;
+        
+        //untuk menampilkan invoice pembelian
+        System.out.println("=============================================");
+        System.out.println(" INVOICE PEMBELIAN");
+        System.out.println("=============================================");
+        System.out.println("Kategori Tiket: Cat " + Cat);
+        System.out.println("Jumlah Tiket : " + quantity);
+        System.out.println("Harga Tiket : Rp" + total);
+        System.out.println("=============================================");
+        
+        // untuk mengambil input jumlah uang yang akan dibayarkan
+        System.out.print("Masukkan jumlah uang yang akan dibayarkan: ");
+        int payment = scanner.nextInt();
+        
+        // untuk menghitung kembalian
+        int change = payment - total;
+        
+        // untuk mMenampilkan kembalian
+        System.out.println("Kembalian : Rp" + change);
+        System.out.println("THANK YOU AND SEE YOU");
+         
+    }
+}
+
+
+    
+
